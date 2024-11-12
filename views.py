@@ -33,6 +33,6 @@ def Home(request):
             result = predict_message(message)
     else:
         form = MessageForm()
-    return render(request, 'home.html', {'form': form, 'result': result})
+    return render(request, 'index.html', {'form': form, 'result': result})
 
 
